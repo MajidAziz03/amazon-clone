@@ -7,9 +7,10 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  // Link
+   Link
 } from 'react-router-dom'
 import Checkout from './Components/Checkout';
+import Login from './Components/Login';
 
 
 
@@ -23,13 +24,13 @@ function App() {
             < Home />
           </Fragment>
         } />
-        <Route exact path='/checkout' element={ 
+        <Route exact path='/checkout' element={
           <Fragment>
             <Header />
             <Checkout />
           </Fragment>
         } />
-        
+        <Route exact path='/login' element={<Login /> } />
       </Routes>
     </Router>
   );

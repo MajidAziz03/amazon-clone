@@ -14,13 +14,15 @@ function Header() {
                 <SearchIcon className="header__searchIcon" />
             </div>
             <div className="header-nav">
+                <Link to='/login'>
                 <div className="header__option">
                     <span className="header__optionLineOne">
                         Salam MAjid!
                     </span>
                     <span className="header__optionLineTwo" >
                         Signin </span>
-                </div>
+                    </div>
+                </Link>
                 <div className="header__option">
                     <span className="header__optionLineOne">
                         Returns&
