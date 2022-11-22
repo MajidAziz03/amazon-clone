@@ -3,12 +3,12 @@ import logo from "../images/logiii.webp";
 import "./Header.css";
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
         <div className="header">
-            <img className="header__logo" src={logo} alt="" />
+            <Link to='/'> <img className="header__logo" src={logo} alt="" /> </Link>
             <div className="header__search">
                 <input type="text" className="header__searchInput" />
                 <SearchIcon className="header__searchIcon" />
@@ -36,10 +36,12 @@ function Header() {
                         Prime
                     </span>
                 </div>
-                <div className="header__optionBasket">
-                    <ShoppingCartIcon className="cart" />
-                    <span className="header__optionLineTwo header__optionBastCount">0</span>
-                </div>
+                <Link to='/checkout'>
+                    <div className="header__optionBasket">
+                        <ShoppingCartIcon className="cart" />
+                        <span className="header__optionLineTwo header__optionBastCount">0</span>
+                    </div>
+                </Link>
             </div>
         </div>
     );

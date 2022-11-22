@@ -1,6 +1,5 @@
 import React from 'react'
 import './Product.css'
-import StarIcon from '@mui/icons-material/Star';
 
 function Product(props) {
     return (
